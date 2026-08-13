@@ -72,6 +72,17 @@
             margin-top: 0;
         }
 
+        section body {
+            margin-top: 1rem;
+            font-size: 1.3rem;
+            color: #555;
+        }
+
+        section .footer {
+            margin-top: 1.5rem;
+            text-align: right;
+        }
+
         /* Lists */
         ul {
             padding-left: 20px;
@@ -79,25 +90,10 @@
         li {
             margin-bottom: 0.5rem;
         }
-
-        /* Contact Links */
-        .contact-links {
-            display: flex;
-            gap: 20px;
-            margin-top: 1.5rem;
-        }
-        .contact-links a {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .contact-links a:hover {
-            background-color: #2980b9;
-        }
+        
+        .projects-list {
+            list-style-type: disc;
+        } 
 
         /* Footer */
         footer {
@@ -118,14 +114,47 @@
         <p>Project Portfolio</p>
     </header>
 
+    <!-- Project Sections-->
     <section>
-        <h2>Senior Capstone Project</h2>
-        <ul>
-            <li><strong>Project 1:</strong> Description of project 1.</li>
-            <li><strong>Project 2:</strong> Description of project 2.</li>
-            <li><strong>Project 3:</strong> Description of project 3.</li>
-            <!-- Add more projects as needed -->
-        </ul>
+        <!-- Capstone Section -->
+        <section id=""capstone>
+            <h2>Golf Sphero Capstone Design</h2>
+            <body>
+                This project was for development of a custom software for a Sphero BOLT+
+                that allowed for measuring the greens conditions of a golf course. These
+                parameters include three key metrics: Stimp rating (green speed), trueness,
+                and smoothness. The software was developed in Python and utilized some of
+                the same frameworks used by the Sphero Edu app, including the bleak library 
+                used for BLE (bluetooth Low Energy) communication. Through the BLE connection, we 
+                were able to handle all of the sensor data and timestamps so that we could model and
+                predict the turf metrics. Data was collected primarily at the Auburn University Turfgrass
+                Unit where a variety of testing surfaces are used for university research.
+            </body>
+            <footer>
+                <div, class="footer">
+                    <a href="github.com/benh327" target="_blank">GitHub Repo</a>
+                </div>
+            </footer>
+        </section>
+
+        <!-- FMCW Radar EMAG Project-->
+        <section>
+            <h2>ELEC-3320 Radar Project</h2>
+            <body>
+                To meet ABET accreditation requirements students were required to
+                design a project from one of the topics in the class (<a href="https://bulletin.auburn.edu/coursesofinstruction/elec/">ELEC-3320</a>)
+                such as waveguides, radar, wireless comms, or electromagetic compatilibility. Due
+                to my interest in the topic and its intersection with signal processing, I opted for
+                a radar simulation project.
+
+                This project is a 
+            </body>
+        </section>
+
+        <section>
+
+        </section>
+    </section>
 </body>
 
 <footer>
