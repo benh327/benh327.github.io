@@ -57,6 +57,15 @@
             padding: 0 1rem;
         }
 
+        /* Centering Images */
+        .center-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%; /* Prevents the image from overflowing on small screens */
+        height: auto;
+}
+
         /* Section Cards */
         section {
             background: white;
@@ -154,7 +163,7 @@
                         could be run to take measurements. The user would 
                     </p>
                     <picture>
-                        <img src="/img/AppScr.png" alt="Golf Sphero BOLT+" width="80%" height="80%" loading="lazy">
+                        <img src="/img/AppScr.png" alt="Golf Sphero BOLT+" width="80%" height="80%" loading="lazy" class="center-image">
                     </picture>
                     </body>
                 <footer>
@@ -195,7 +204,7 @@
                     operates on the same core mehcanisms as pulse radar, but the way of determining range and velocity are slightly
                     different. If the 
                 </p>
-                <img src="/img/fmcw.png" alt="FMCW Radar Diagram" width="80%" height="80%" loading="lazy">
+                <img src="/img/fmcw.png" alt="FMCW Radar Diagram" width="50%" height="50%" loading="lazy" class="center-image">
             </body>
         </details>
     </section>
