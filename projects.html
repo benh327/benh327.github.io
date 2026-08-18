@@ -50,7 +50,7 @@
             color: #3498db;
         }
 
-        .github-link a {
+        .hyperlink a {
             display: inline-block;
             margin-top: 1rem;
             padding: 10px 20px;
@@ -63,7 +63,7 @@
             margin-right: auto;
             text-align: center;
         }
-        .github-link a:hover {
+        .hyperlink a:hover {
             background-color: #2980b9;
         }
 
@@ -166,40 +166,74 @@
 
     
     <!-- Capstone Section -->
-    <section id="capstone" class="project-section">
+    <section id="capstone-project" class="project-section">
         <h2>Golf Sphero Capstone Design</h2>
-            <details>
-                <summary>Project Description</summary>
-                <body>
-                    <p>This project was for development of a custom software for a Sphero BOLT+
+        <details>
+            <summary>Project Description</summary>
+            <body>
+                <p>
+                    This project was for development of a custom software for a Sphero BOLT+
                     that allowed for measuring the greens conditions of a golf course. These
                     parameters include three key metrics: Stimp rating (green speed), trueness,
                     and smoothness. The software was developed in Python and utilized some of
                     the same frameworks used by the Sphero Edu app, including the bleak library 
-                    used for BLE (bluetooth Low Energy) communication. Through the BLE connection, we 
+                    used for BLE (Bluetooth Low Energy) communication. Through the BLE connection, we 
                     were able to handle all of the sensor data and timestamps so that we could model and
                     predict the turf metrics. Data was collected primarily at the Auburn University Turfgrass
                     Unit where a variety of testing surfaces are used for university research.
-                    </p>
-                    <p>
-                        The process for measurement was designed to be as simple and streamlined as possible.
-                        The user would shake the Sphero BOLT+ to wake it up, then the button in the application
-                        would be selected to attempt to connect over Bluetooth. Once connected, the ball
-                        could be run to take measurements. The user would 
-                    </p>
-                    <picture>
-                        <img src="/img/AppScr.png" alt="Golf Sphero BOLT+" width="50%" height="50%" loading="lazy" class="center-image">
-                    </picture>
-                </body>
-                <div, class="github-link">
-                    <a href="https://github.com/benh327" target="_blank">GitHub Repo</a>
-                </div>
+                </p>
+                <p>
+                    The process for measurement was designed to be as simple and streamlined as possible.
+                    The user would shake the Sphero BOLT+ to wake it up, then the button in the application
+                    would be selected to attempt to connect over Bluetooth. Once connected, the ball
+                    could be run to take measurements. The user would 
+                </p>
+                <picture>
+                    <img src="/img/AppScr.png" alt="Golf Sphero BOLT+" width="50%" height="50%" loading="lazy" class="center-image">
+                </picture>
+            </body>
+            <div, class="hyperlink">
+                <a href="https://github.com/benh327" target="_blank">GitHub Repository</a>
+            </div>
+        </details>
+    </section>
+
+    <section id="asml-project" class="project-section">
+        <h2>Automatic Video Highlight Detection and Captioning</h2>
+        <details>
+            <summary>Project Description</summary>
+            <body>
+                <p>
+                    For my Applied Statistics and Machine Learning Course we were
+                    tasked with making a term project that integrates concepts from
+                    class. My grouped opted for a model that would take a video as
+                    an input (i.e. a sporting event), detect the point in time of
+                    particular highlights, and then generate a text based on the events
+                    of the highlight. The model combined multiple different existing models and datasets to allow it to
+                    exhibit the full functionality required of the project.
+                </p>
+                <p>
+                    The two primary elements of the model are the highlight dection model which uses a boundary-matching
+                    network and the video captioning which is done by an Large-Language Model (LLM) and Computer Vision model such
+                    as Large Language and Vision Assistant (LLaVA). 
+                    The Boundary-Matching Network generates a confidence map throughout the duration of the video to determine
+                    possible start and end points of a highlight. LLaVA is used to first identify actions within the video using
+                    using a vision encoder matrix integrated in the model. The model then have a projection matrix capable of translating
+                    the identified action into an LLM tokens for caption generation.
+                </p>
+                <p>
+                </p>
+                
+            </body>
+            <div, class="hyperlink">
+                <a href="img/asmlposter.pdf" target="_blank">Project Poster</a>
+            </div>
         </details>
     </section>
 
     <!-- FMCW Radar EMAG Project-->
     <section id="fmcw-radar" class="project-section">
-        <h2>ELEC-3320 Radar Project</h2>
+        <h2>ELEC-3320 FMCW Radar Project</h2>
         <details>
             <summary>Project Description</summary>
             <body>
